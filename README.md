@@ -5,13 +5,17 @@ Probably an Image editor. Or a Image Processing lib. Depends on the user
 ### Phase 1: Basic Image Operations
 
 1) Project Setup
-- [ ] Install necessary libraries: **libjpeg** for JPEG images, **libpng** for PNG images, or **stb_image.h** for a simpler header-only library.
+- [x] Install necessary libraries: **libjpeg** for JPEG images, **libpng** for PNG images, or **stb_image.h** for a simpler header-only library.
 
-- [ ] Set up your development environment with a C compiler (e.g., GCC).
+- [x] Set up your development environment with a C compiler (e.g., GCC).
 
 2) Loading and Displaying Images
 
-- [ ] Use **stb_image.h** to load images into memory.
+- [x] Use **stb_image.h** to load images & store images into memory.
+
+Basically, image has height, width and channels, so every image are arranged pixelby pixel in a row as channels. 
+PNG images may include padding for each scanline (row of pixels) to ensure proper alignment. Each scanline in a PNG image may be padded to align to certain byte boundaries, especially if using certain filter types or compression methods
+
 - [ ] Write functions to read pixel data and convert images to grayscale.
 
 3) Image Representation as Matrices
