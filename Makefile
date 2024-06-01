@@ -6,9 +6,9 @@ CFLAGS = -Wall -Wextra -g -Iinclude  -pedantic
 
 
 # Target executable
-TARGET = img
+TARGET = output
 
-SRC = src/practice.c
+SRC = src/main.c
 
 OBJ = $(SRC:.c=.o)
 
